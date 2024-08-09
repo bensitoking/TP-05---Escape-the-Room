@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-// using SalaDeEscape.Models;
+//using SalaDeEscape.Models;
 
 namespace SalaDeEscape.Controllers;
 
@@ -23,34 +23,42 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Comenzar()
+   public IActionResult Comenzar()
     {
         int num = Escape.GetEstadoJuego();
+         return RedirectToAction("Habitacion", new { sala = Escape.GetEstadoJuego() });
+    }
+
+    public IActionResult Habitacion(int sala, string clave)
+    {
+        if (sala != Escape.GetEstadoJuego())
+            {
+                return RedirectToAction("Habitacion", new { sala = Escape.GetEstadoJuego() });
+            }
+
+            if (clave != null)
+            {
+                bool correcta = Escape.ResolverSala(sala, clave);
+                if (correcta)
+                {
+                    if (sala == 5)
+                    {
+                        return RedirectToAction("Victoria");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Habitacion", new { sala = sala + 1 });
+                    }
+                }
+                else
+                {
+                    ViewBag.Error = "¡Respuesta incorrecta! Intenta de nuevo.";
+                }
+            }
+            return View($"Habitacion{sala}");
+    }
+        public IActionResult Victoria()
+    {
         return View();
     }
-
-    // public IActionResult Habitacion(int sala, string clave)
-    // {
-    //     if (sala == Escape.GetEstadoJuego())
-    //     {
-
-    //     }
-    // }
-
-}
-static class Escape
-{
-       static string[] incognitasSalas = {"", };
-       static int estadoJuego = 1;
-
-    private static void InicializarJuego() {
-
-    }
-    public static int GetEstadoJuego() {
-        return estadoJuego;
-    }
-
-    // public static bool ResolverSala(int Sala, string Incognita){
-
-    // }
 }
