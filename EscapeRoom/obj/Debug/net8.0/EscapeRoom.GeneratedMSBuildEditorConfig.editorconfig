@@ -18,8 +18,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\david\Desktop\Escape Room\EscapeRoom
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Creditos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Habitacion1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Habitacion2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Habitacion3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Habitacion4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Tutorial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUdXRvcmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Home/Victoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWN0b3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/david/Desktop/Escape Room/EscapeRoom/Views/Shared/_Layout.cshtml]

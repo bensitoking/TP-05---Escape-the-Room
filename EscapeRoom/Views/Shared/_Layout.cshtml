@@ -4,26 +4,43 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NombreProyecto</title>
+    <title>@ViewData["Title"] - Escapa de los Simpsons</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        NombreProyecto
+    <header class="header">
+        <h1>¡Escapa de los Simpsons!</h1>
+        <div id="donut-icon" style="cursor: pointer; font-size: 2em;">🍩</div>
     </header>
 
-    <main role="main">
+    <nav class="navbar">
+        <a href="@Url.Action("Index", "Home")">Inicio</a>
+        <a href="@Url.Action("Tutorial", "Home")">Ver Tutorial</a>
+        <a href="@Url.Action("Comenzar", "Home")">Comenzar</a>
+        <a href="@Url.Action("Creditos", "Home")">Créditos</a>
+    </nav>
+
+    <main role="main" class="container">
         @RenderBody()
     </main>
 
-    <footer>
-        &copy; @DateTime.Now.Year - NombreProyecto
+    <footer class="footer">
+        &copy; @DateTime.Now.Year - Escapa de los Simpsons
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $(document).ready(function() {
+            $('#donut-icon').click(function() {
+                alert('¡Has encontrado el easter egg de Ned Flanders! ¡Hola, vecino!');
+            });
+        });
+    </script>
 </body>
 
 </html>

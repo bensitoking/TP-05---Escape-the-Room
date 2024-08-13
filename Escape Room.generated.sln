@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscapeRoom", "EscapeRoom\EscapeRoom.csproj", "{280DCD28-5517-4FE0-B345-92DCDFF386B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscapeRoom", "EscapeRoom\EscapeRoom.csproj", "{EA2A912F-DEF9-450F-BEC8-3438F00D4563}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{280DCD28-5517-4FE0-B345-92DCDFF386B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{280DCD28-5517-4FE0-B345-92DCDFF386B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{280DCD28-5517-4FE0-B345-92DCDFF386B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{280DCD28-5517-4FE0-B345-92DCDFF386B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2A912F-DEF9-450F-BEC8-3438F00D4563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2A912F-DEF9-450F-BEC8-3438F00D4563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2A912F-DEF9-450F-BEC8-3438F00D4563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2A912F-DEF9-450F-BEC8-3438F00D4563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

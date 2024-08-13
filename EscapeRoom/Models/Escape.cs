@@ -1,14 +1,16 @@
 static class Escape
 {
-       static string[] incognitasSalas = new string[4];
-       static int estadoJuego = 1;
+    static string[] incognitasSalas = new string[4];
+    static int estadoJuego = 1;
 
-    private static void InicializarJuego() {
-        incognitasSalas[0] = "";
-        incognitasSalas[1] = "";
-        incognitasSalas[2] = "";
-        incognitasSalas[3] = "";
+    public static void InicializarJuego() {
+        incognitasSalas[0] = "Rosquillas";    
+        incognitasSalas[1] = "Llamarada Moe"; 
+        incognitasSalas[2] = "Don Barredora"; 
+        incognitasSalas[3] = "Max Power";    
+        estadoJuego = 1;
     }
+
     public static int GetEstadoJuego() {
         return estadoJuego;
     }
@@ -16,22 +18,25 @@ static class Escape
     public static bool ResolverSala(int sala, string incognita){
 
         bool exito;
-        if (incognitasSalas == null)
+        if (incognitasSalas[0] == null)
         {
             InicializarJuego();
+
         }
         if (sala == GetEstadoJuego())
         {
-            if(incognitasSalas[sala-1] == incognita)
+            if (incognitasSalas[sala - 1].Equals(incognita, StringComparison.OrdinalIgnoreCase))
             {
                 exito = true;
                 estadoJuego++;
             }
-            else {
+            else 
+            {
                 exito = false;
             }
         }
-        else {
+        else 
+        {
             exito = false;
         }
         return exito;

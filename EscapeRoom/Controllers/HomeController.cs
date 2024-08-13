@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-//using SalaDeEscape.Models;
 
 namespace SalaDeEscape.Controllers;
 
@@ -27,6 +26,7 @@ public class HomeController : Controller
     {
         int num = Escape.GetEstadoJuego();
          return RedirectToAction("Habitacion", new { sala = Escape.GetEstadoJuego() });
+
     }
 
     public IActionResult Habitacion(int sala, string clave)
@@ -41,8 +41,9 @@ public class HomeController : Controller
                 bool correcta = Escape.ResolverSala(sala, clave);
                 if (correcta)
                 {
-                    if (sala == 5)
+                    if (sala == 4)
                     {
+                        Escape.InicializarJuego();
                         return RedirectToAction("Victoria");
                     }
                     else
@@ -58,6 +59,10 @@ public class HomeController : Controller
             return View($"Habitacion{sala}");
     }
         public IActionResult Victoria()
+    {
+        return View();
+    }
+        public IActionResult Creditos()
     {
         return View();
     }

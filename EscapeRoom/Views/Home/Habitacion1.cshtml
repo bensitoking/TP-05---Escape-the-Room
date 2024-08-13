@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Habitación 1";
+}
+
+<div class="text-center">
+    <h1>Habitación 1:Kwik-E-Mart</h1>
+    <p>Apu: ¡Hola Homero! Bienvenido al Kwik-E-Mart. Antes de que puedas continuar, necesito saber, ¿qué es lo que más deseas en el mundo? Responde con una sola palabra</p>
+    <form method="post" action="/Home/Habitacion">
+        <input type="hidden" name="sala" value="1" />
+        <input type="text" name="clave" placeholder="Ingresa la clave" />
+        <button type="submit">VALIDAR</button>
+    </form>
+
+    <button onclick="alert('Pista 1: Mmmhh...')">Pista 1</button>
+    <button onclick="alert('Pista 2: Son redondas y dulces')">Pista 2</button>
+
+    @if(ViewBag.Error != null)
+    {
+        <div style="color:red;">
+            <p>@ViewBag.Error</p>
+        </div>
+    }
+</div>
